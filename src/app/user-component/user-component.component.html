@@ -1,1 +1,12 @@
-<p> User (Note **** It will reload the page bcz of href) </p>
+<p> User </p>
+<hr>
+<hr>
+<div class="container" *ngIf="requestType && requestType!== ''">
+  <h3>{{'Request type : ' + requestType}}</h3>
+  <h3>{{'User Id : ' + userId}}</h3>
+</div>
+<hr>
+
+<p> *** To reload a component from its own ***</p>
+<a routerLinkActive="active" routerLink="/user/view/1">User 1</a> |
+<a routerLinkActive="active" routerLink="/user/view/2">User 2</a> |

@@ -19,6 +19,10 @@ const appRoutes = [
     component: UserComponent
   },
   {
+    path: 'user/:requestType/:id',
+    component: UserComponent
+  },
+  {
     path: 'servers',
     component: ServersComponent
   }
