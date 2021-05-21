@@ -25,6 +25,10 @@ const appRoutes = [
   {
     path: 'servers',
     component: ServersComponent
+  },
+  {
+    path: 'servers/:id',
+    component: ServersComponent
   }
 ];
 

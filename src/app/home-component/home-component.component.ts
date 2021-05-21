@@ -21,4 +21,12 @@ export class HomeComponent implements OnInit {
   navigateToSingleUser() {
     this.router.navigate(['/user/view/1']);
   }
+
+  navigateToServer() {
+    this.router.navigate(['/servers']);
+  }
+
+  navigateToSingleServer() {
+    this.router.navigate(['/servers/10']);
+  }
 }
