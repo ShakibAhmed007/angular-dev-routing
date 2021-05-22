@@ -22,11 +22,18 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['/user/view/1']);
   }
 
+  /*
+   * Navigate to servers programmitically
+   * and send query parameters and fragment
+   */
   navigateToServer() {
     this.router.navigate(['/servers']);
   }
 
   navigateToSingleServer() {
-    this.router.navigate(['/servers/10']);
+    this.router.navigate(['/servers/1'], {
+      queryParams: { requestType: 'view' },
+      fragment: 'share'
+    });
   }
 }
