@@ -5,11 +5,12 @@
 <p> *** Query Param Example ***</p>
 <p> *** To reload a component from its own ***</p>
 
-<div *ngIf="queryParam && queryParam === 'view'">
+<div *ngIf="queryParam">
+  <h3>Server Id: {{serverId}}</h3>
   <h3>Request Type: {{queryParam}}</h3>
   <h3>Fragment: {{fragment}}</h3>
 </div>
 
 
 <a [routerLink]="['/servers/1']" [queryParams]="{requestType: 'view'}" [fragment]="'share'">Server 1</a> |
-<a [routerLink]="['/servers/2']" [queryParams]="{requestType: 'edit'}" [fragment]="'share'">Server 2</a> |
+<a [routerLink]="['/servers/2']" [queryParams]="{requestType: 'view'}" [fragment]="'share'">Server 2</a> |
