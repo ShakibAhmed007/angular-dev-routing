@@ -10,6 +10,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { AppRoutingModule } from './app-routing.module';
 import { ConfidentialDataComponent } from './confidential-data/confidential-data.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { ResolverDataComponent } from './resolver-data/resolver-data.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
@@ -21,7 +22,8 @@ import { ErrorPageComponent } from './error-page/error-page.component';
     ServersComponent,
     PageNotFoundComponent,
     ConfidentialDataComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    ResolverDataComponent
   ],
   bootstrap: [AppComponent]
 })
