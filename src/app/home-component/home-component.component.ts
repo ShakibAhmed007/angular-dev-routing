@@ -36,4 +36,8 @@ export class HomeComponent implements OnInit {
       fragment: 'share'
     });
   }
+
+  navigateToConfidentialData() {
+    this.router.navigate(['/confidential-data']);
+  }
 }

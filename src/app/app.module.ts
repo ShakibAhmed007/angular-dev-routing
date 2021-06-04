@@ -8,6 +8,7 @@ import { HomeComponent } from './home-component/home-component.component';
 import { ServersComponent } from './servers/servers.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ConfidentialDataComponent } from './confidential-data/confidential-data.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
@@ -17,7 +18,8 @@ import { AppRoutingModule } from './app-routing.module';
     UserComponent,
     HomeComponent,
     ServersComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ConfidentialDataComponent
   ],
   bootstrap: [AppComponent]
 })

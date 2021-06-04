@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './auth-guard.service';
+import { ConfidentialDataComponent } from './confidential-data/confidential-data.component';
 import { HomeComponent } from './home-component/home-component.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ServersComponent } from './servers/servers.component';
@@ -25,6 +27,11 @@ const appRoutes: Routes = [
   {
     path: 'servers/:id',
     component: ServersComponent
+  },
+  {
+    path: 'confidential-data',
+    component: ConfidentialDataComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'not-found',
