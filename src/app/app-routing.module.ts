@@ -5,6 +5,7 @@ import { ConfidentialDataComponent } from './confidential-data/confidential-data
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { HomeComponent } from './home-component/home-component.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DataResolver } from './resolver-data/data-resolver.service';
 import { ResolverDataComponent } from './resolver-data/resolver-data.component';
 import { ServersComponent } from './servers/servers.component';
 import { UserComponent } from './user-component/user-component.component';
@@ -37,7 +38,10 @@ const appRoutes: Routes = [
   },
   {
     path: 'resolver-data',
-    component: ResolverDataComponent
+    component: ResolverDataComponent,
+    resolve: {
+      serverData: DataResolver
+    }
   },
   // {
   //   path: 'not-found',
