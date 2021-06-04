@@ -41,7 +41,11 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['/confidential-data']);
   }
 
-  navigateToErrorPage(){
-    this.router.navigate(['/not-found'])
+  navigateToResolverData() {
+    this.router.navigate(['/resolver-data']);
+  }
+
+  navigateToErrorPage() {
+    this.router.navigate(['/not-found']);
   }
 }
