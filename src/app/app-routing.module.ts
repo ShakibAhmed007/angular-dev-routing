@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth-guard.service';
 import { ConfidentialDataComponent } from './confidential-data/confidential-data.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 import { HomeComponent } from './home-component/home-component.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ServersComponent } from './servers/servers.component';
@@ -33,9 +34,14 @@ const appRoutes: Routes = [
     component: ConfidentialDataComponent,
     canActivate: [AuthGuard]
   },
+  // {
+  //   path: 'not-found',
+  //   component: PageNotFoundComponent
+  // },
   {
     path: 'not-found',
-    component: PageNotFoundComponent
+    component: ErrorPageComponent,
+    data: { errorMsg: 'Static Error Msg' }
   },
   {
     path: '**',

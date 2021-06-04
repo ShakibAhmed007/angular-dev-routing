@@ -40,4 +40,8 @@ export class HomeComponent implements OnInit {
   navigateToConfidentialData() {
     this.router.navigate(['/confidential-data']);
   }
+
+  navigateToErrorPage(){
+    this.router.navigate(['/not-found'])
+  }
 }
