@@ -43,15 +43,15 @@ const appRoutes: Routes = [
       serverData: DataResolver
     }
   },
-  // {
-  //   path: 'not-found',
-  //   component: PageNotFoundComponent
-  // },
   {
     path: 'not-found',
-    component: ErrorPageComponent,
-    data: { errorMsg: 'Static Error Msg' }
+    component: PageNotFoundComponent
   },
+  // {
+  //   path: 'not-found',
+  //   component: ErrorPageComponent,
+  //   data: { errorMsg: 'Static Error Msg' }
+  // },
   {
     path: '**',
     redirectTo: '/not-found',
