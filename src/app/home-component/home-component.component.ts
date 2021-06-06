@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
 
   navigateToSingleServer() {
     this.router.navigate(['/servers/1'], {
-      queryParams: { requestType: 'view' },
+      queryParams: { requestType: 'view' , 'data': '123'},
       fragment: 'share'
     });
   }
